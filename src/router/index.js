@@ -14,6 +14,8 @@ const Cart = () =>
     import ('../views/cart/Cart')
 const Profile = () =>
     import ('../views/prifile/Profile')
+const deatil = () =>
+    import ('../views/detail/detail')
     //1.安装插件
 Vue.use(Router)
     //2.创建路由对象
@@ -32,6 +34,9 @@ const routes = [{
     }, {
         path: '/profile',
         component: Profile
+    }, {
+        path: '/detail',
+        component: deatil
     }]
     //2.创建router
 const router = new VueRouter({

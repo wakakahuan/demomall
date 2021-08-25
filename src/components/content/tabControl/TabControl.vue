@@ -26,6 +26,8 @@ export default {
     methods:{
         itemClick(index) {
             this.currentIndex = index;
+            //内部发生点击，子传父
+            this.$emit('tabclick',index)
         }
     }
 }
@@ -35,7 +37,7 @@ export default {
     .tab-control{
         display: flex;
         text-align: center;
-        text-align: center;
+        background-color: #fff;
         font-size: 15px;
     }
     .tab-control-item {
